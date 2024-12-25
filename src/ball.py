@@ -1,10 +1,13 @@
+
 import pygame
 from pygame.locals import *
 from utils import *
 from const import *
 
 class Ball(pygame.sprite.Sprite):
+    # 构造函数
     def __init__(self, imgPath, x, y, dirX, dirY):
+        # 调用父类的构造函数
         super(Ball, self).__init__()
         self.posX = x
         self.posY = y
